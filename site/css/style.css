@@ -139,3 +139,6 @@ a { color: inherit; }
   .gallery { grid-template-columns: repeat(2, 1fr); gap: 12px; }
   .art-text { font-size: 2.2rem; }
 }
+
+.posts-empty { padding: 16px 0; color: var(--ink-soft); }
+.lightbox-link { color: #f6f1e7; margin-left: 8px; }
