@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>캘리그라피 작업실</title>
+  <meta name="description" content="손글씨로 마음을 전하는 캘리그라피 작업물과 작업 의뢰 안내">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Noto+Serif+KR:wght@400;600&family=Noto+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#top">작업실 이름</a>
+    <nav class="nav">
+      <a href="#works">작품</a>
+      <a href="#posts">작업 노트</a>
+      <a href="#about">소개</a>
+      <a href="#commission">작업 의뢰</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="hero-kicker">CALLIGRAPHY</p>
+      <h1 class="hero-title">한 획에<br>마음을 담습니다</h1>
+      <p class="hero-sub">여기에 한 줄 소개를 적어주세요.</p>
+      <a class="btn" href="#works">작품 보기</a>
+      <span class="seal" aria-hidden="true">印</span>
+    </section>
+
+    <section id="works" class="section">
+      <h2 class="section-title">작품</h2>
+      <div class="filters" id="filters" role="tablist"></div>
+      <div class="gallery" id="gallery"></div>
+    </section>
+
+    <section id="posts" class="section section-alt">
+      <h2 class="section-title">작업 노트</h2>
+      <ul class="posts" id="posts-list"></ul>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="about-photo" aria-hidden="true">글</div>
+      <div>
+        <h2 class="section-title">소개</h2>
+        <p>여기에 작가 소개를 적어주세요. 캘리그라피를 시작한 계기, 작업 스타일, 활동 이력 등을 쓰면 좋습니다.</p>
+        <ul class="history">
+          <li>활동 이력 1</li>
+          <li>활동 이력 2</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="commission" class="section section-alt">
+      <h2 class="section-title">작업 의뢰</h2>
+      <div class="cards">
+        <div class="card"><h3>로고 · 상호</h3><p>가게 간판, 브랜드 로고용 글씨</p></div>
+        <div class="card"><h3>제품 · 패키지</h3><p>라벨, 패키지, 상세페이지 타이틀</p></div>
+        <div class="card"><h3>선물 · 액자</h3><p>가훈, 축하 문구, 기념 액자</p></div>
+      </div>
+      <p class="contact">
+        문의: <a href="https://blog.naver.com/spacewin">네이버 블로그</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> 작업실 이름. 모든 작품의 저작권은 작가에게 있습니다.</p>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox-close" aria-label="닫기">×</button>
+    <figure>
+      <div class="lightbox-art" id="lightbox-art"></div>
+      <figcaption id="lightbox-caption"></figcaption>
+    </figure>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
